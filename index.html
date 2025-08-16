@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        
+        <!-- Mode Toggle -->
+        <div class="mode-toggle">
+            <button id="generate-mode" class="mode-btn active">Generate Password</button>
+            <button id="test-mode" class="mode-btn">Test Password</button>
+        </div>
+
+        <!-- Password Display -->
+        <div class="password-display">
+            <input type="text" id="password" placeholder="Click Generate Password or enter password to test">
+            <button id="copy-btn" title="Copy to clipboard"></button>
+            <button id="clear-btn" title="Clear password"></button>
+        </div>
+        
+        <!-- Password Strength Meter -->
+        <div class="strength-meter">
+            <div class="strength-bar" id="strength-bar"></div>
+            <span class="strength-text" id="strength-text">Password Strength</span>
+        </div>
+        
+        <!-- Settings -->
+        <div class="settings">
+            <div class="setting">
+                <label for="length">Password Length: <span id="length-value">12</span></label>
+                <input type="range" id="length" min="4" max="50" value="12">
+            </div>
+            
+            <div class="setting">
+                <label for="uppercase">
+                    <input type="checkbox" id="uppercase" checked>
+                    Include Uppercase Letters (A-Z)
+                </label>
+            </div>
+            
+            <div class="setting">
+                <label for="lowercase">
+                    <input type="checkbox" id="lowercase" checked>
+                    Include Lowercase Letters (a-z)
+                </label>
+            </div>
+            
+            <div class="setting">
+                <label for="numbers">
+                    <input type="checkbox" id="numbers" checked>
+                    Include Numbers (0-9)
+                </label>
+            </div>
+            
+            <div class="setting">
+                <label for="symbols">
+                    <input type="checkbox" id="symbols" checked>
+                    Include Symbols (!@#$%^&*)
+                </label>
+            </div>
+            
+            <div class="setting">
+                <label for="exclude-similar">
+                    <input type="checkbox" id="exclude-similar">
+                    Exclude Similar Characters (0, O, l, I)
+                </label>
+            </div>
+        </div>
+        
+        <!-- Generate Button -->
+        <button id="generate-btn" class="generate-btn">Generate Password</button>
+        
+        <!-- Password Tips -->
+        <div class="password-tips" id="password-tips">
+            <h3>Password Tips</h3>
+            <ul id="tips-list">
+                <li>Use at least 12 characters for better security</li>
+                <li>Include a mix of uppercase and lowercase letters</li>
+                <li>Add numbers and special characters</li>
+                <li>Avoid common words or patterns</li>
+            </ul>
+        </div>
+        
+        <!-- Copy Notification -->
+        <div id="copy-notification" class="copy-notification">Password copied to clipboard!</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
