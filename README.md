@@ -80,7 +80,7 @@ Note: Backdrop blur effects require modern browser support. Fallback styles are 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/password-generator.git
+git clone https://github.com/Yakubrajhere/password-generator.git
 ```
 
 2. Navigate to the project directory:
@@ -159,6 +159,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Contact Information
 
-Project Repository: [https://github.com/yourusername/password-generator](https://github.com/yourusername/password-generator)
+Project Repository: [https://github.com/yourusername/password-generator](https://github.com/Yakubrajhere/password-generator)
 
 For issues and feature requests, please use the GitHub issue tracker.
